@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_motor"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/mt_3f_s"
+                android:id="@+id/tileMotorIV" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="300dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        android:layout_width="100dp">
+
+                        <TextView
+
+                            android:text="M. name"
+                            android:id="@+id/tileMotorNameTV"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryText"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20sp">
+
+                        </TextView>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="Zm [\u03A9]"
+                                    android:id="@+id/textview10"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:text="-"
+                                    android:id="@+id/MotorTileImpedanceTV"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/blue_dark"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="3dp"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text='Ikm3"[kA]'
+                                    android:id="@+id/textview11"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:text="-"
+                                    android:id="@+id/MotorTileSCCurrentTV"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/blue_dark"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="3dp"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:text="@string/power_kW_item"
+                                android:id="@+id/textView4"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp"
+                                android:layout_width="110dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/MotorTilePowerTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:text="@string/voltage_kv_item"
+                                android:id="@+id/textview6"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/MotorTileVoltageTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="cosFi [-]"
+                                android:id="@+id/textView11"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/MotorTileCosfiTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="@string/startup_factor"
+                                android:id="@+id/textView12"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/MotorTileStartupTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="@string/efficiency"
+                                android:id="@+id/textView14"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="wrap_content"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/MotorTileEfficiencyTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

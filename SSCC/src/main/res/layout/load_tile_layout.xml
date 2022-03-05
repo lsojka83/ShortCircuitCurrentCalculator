@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ldg_s"
+                android:id="@+id/tileLoadIV" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_width="100dp">
+
+                        <TextView
+
+                            android:text="Ld name "
+                            android:id="@+id/tileLoadNameTV"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="20sp"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="@string/voltage_kv_item"
+                                android:id="@+id/textView2"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="10sp"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="3dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/loadTileVoltageTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="10sp"
+                                android:paddingLeft="3dp"
+                                android:layout_width="wrap_content"
+                                android:paddingTop="3dp">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="5dp"
+                                android:paddingTop="3dp"
+                                android:text="@string/phases_no_item"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="10sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/loadPhaseNoTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:textSize="10sp"
+                                android:paddingLeft="5dp"
+                                android:layout_width="wrap_content">
+
+                            </TextView>
+                        </TableRow>
+
+                    </TableLayout>
+                </TableRow>
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

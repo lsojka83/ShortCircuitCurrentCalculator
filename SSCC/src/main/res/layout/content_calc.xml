@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_calc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pl.ls4soft.sscc.CalcActivity"
+    tools:showIn="@layout/activity_calc"
+    android:background="@android:color/background_light">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listViewTiles"
+        android:layout_alignParentTop="true"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="150dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:text="@string/calc_add_utility_btn_name"
+                android:layout_height="match_parent"
+                android:id="@+id/addUtilityBtn"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/listViewTiles"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:background="@drawable/edstyle_green"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:text="@string/calc_add_trafo_btn_name"
+                android:layout_height="match_parent"
+                android:id="@+id/addTransformerBtn"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/listViewTiles"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:background="@drawable/edstyle_green"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:text="@string/calc_add_line_btn_name"
+                android:layout_height="match_parent"
+                android:id="@+id/addCableBtn"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/listViewTiles"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:background="@drawable/edstyle_green"
+                android:layout_margin="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <Button
+                android:text="@string/calc_add_bus_btn_name"
+                android:id="@+id/addBusBtn"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/listViewTiles"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:background="@drawable/edstyle_green"
+                android:layout_margin="2dp"
+                android:padding="1dp" />
+
+            <Button
+                android:text="@string/calc_add_load_btn_name"
+                android:id="@+id/addLoadBtn"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/listViewTiles"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:background="@drawable/edstyle_green"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:text="@string/calc_add_motor_btn_name"
+                android:id="@+id/addMotorBtn"
+                android:gravity="center"
+                android:textStyle="bold|italic"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/listViewTiles"
+                android:layout_weight="1"
+                android:textSize="12dp"
+                android:background="@drawable/edstyle_green"
+                android:layout_margin="2dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="@string/calc_calc_btn_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/calcBtn"
+            android:textStyle="bold|italic"
+            android:layout_below="@+id/addUtilityBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="1"
+            android:background="@drawable/edstyle_green"
+            android:layout_margin="2dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

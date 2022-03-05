@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/tileBusIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ps_s" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="300dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent">
+
+                        <TextView
+
+                            android:id="@+id/tileBusNameTV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="20sp"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text="Zk [\u03A9]"
+                                    android:id="@+id/textview10"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:text="-"
+                                    android:id="@+id/BusTileImpedanceTV"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="3dp"
+                                    android:layout_marginTop="3dp">
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/ZkTotalDesc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="@string/Zk"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"></TextView>
+
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:text='Ik"?[kA]'
+                                    android:id="@+id/BusTileIkBisTypeTV"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:text="-"
+                                    android:id="@+id/BusTileSCCurrentTV"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="3dp"
+                                    android:layout_marginTop="3dp">
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/IkBisDescTV"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="@string/IkBis"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"></TextView>
+
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:text="Ip [kA]"
+                                    android:id="@+id/textView29"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:text="-"
+                                    android:id="@+id/BusTileSCImpCurrentTV"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@android:color/holo_red_dark"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="3dp"
+                                    android:layout_marginTop="3dp">
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/IpDesc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="3dp"
+                                    android:text="@string/Ip"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:textStyle="bold"></TextView>
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+
+                </TableRow>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

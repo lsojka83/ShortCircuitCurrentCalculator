@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/tr_s"
+                android:id="@+id/tileTrafoIV" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="300dp">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        android:layout_width="100dp">
+
+                        <TextView
+
+                            android:text="T. name"
+                            android:id="@+id/tileTrafoNameTV"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryText"
+                            android:layout_width="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20sp">
+
+                        </TextView>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:text="ZkT [\u03A9]"
+                                    android:id="@+id/textview10"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:text="-"
+                                    android:id="@+id/trafoTileImpedanceTV"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/blue_dark"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="3sp"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/textview11"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/trafoTileSCCurrentTV"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/blue_dark"
+                                    android:textSize="12dp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TableRow android:layout_height="wrap_content"
+                            android:layout_width="wrap_content">
+
+                            <TextView
+                                android:text="@string/power_kva_item"
+                                android:id="@+id/textView4"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:lines="1"
+                                android:layout_width="110dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/trafoTilePowerTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:text="@string/trafo_p_v"
+                                android:id="@+id/textview6"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:lines="1"
+                                android:layout_width="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/trafoTilePrimaryVoltageTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="@string/trafo_s_v"
+                                android:id="@+id/textView11"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:lines="1"
+                                android:layout_width="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/trafoTileSeconaryVoltageTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="uk [%] "
+                                android:id="@+id/textView12"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:lines="1"
+                                android:layout_width="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/trafoTileukTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="@string/trafo_nom_loss"
+                                android:id="@+id/textView14"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp"
+                                android:maxLines="1"
+                                android:lines="1"
+                                android:layout_width="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/trafoTileNominalLossTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+                        </TableRow>
+
+                    </TableLayout>
+
+                </TableRow>
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

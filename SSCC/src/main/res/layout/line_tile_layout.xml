@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="fill_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ln_s"
+                android:id="@+id/tileLineIV" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_height="match_parent"
+                        android:layout_width="100dp">
+
+                        <TextView
+
+                            android:text="L. name "
+                            android:id="@+id/tileLineNameTV"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorPrimaryText"
+                            android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginLeft="10dp">
+
+                        </TextView>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:text="ZkL [\u03A9]"
+                                    android:id="@+id/textView7"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:text="-"
+                                    android:id="@+id/lineTileImpedanceTV"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/blue_dark"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:paddingLeft="3dp"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" >
+
+                                <TextView
+                                    android:id="@+id/textView9"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/colorPrimaryText"
+                                    android:textSize="10sp"
+                                    android:layout_width="wrap_content"
+                                    android:paddingLeft="10dp"
+                                    android:paddingTop="5dp"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/lineTileSCCurrentTV"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/blue_dark"
+                                    android:textSize="12dp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_width="wrap_content"
+                                    android:maxLines="1"
+                                    android:ellipsize="end"
+                                    android:layout_marginTop="3dp">
+
+                                </TextView>
+                            </TableRow>
+
+                        </TableLayout>
+                    </LinearLayout>
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="@string/line_lenght"
+                                android:id="@+id/textView13"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="110dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/lineTileLenghtTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="@string/line_cs"
+                                android:id="@+id/textView16"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp"
+                                android:layout_width="110dp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/lineTileSectionTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="@string/line_mat"
+                                android:id="@+id/textView18"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="110dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/lineTileMaterialTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:text="@string/line_plac"
+                                android:id="@+id/textView20"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="110dp"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:text="-"
+                                android:id="@+id/lineTilePlacementTV"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <TextView
+                                android:id="@+id/textView22"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="5dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+
+                            <TextView
+                                android:id="@+id/textView23"
+                                android:layout_height="wrap_content"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimaryText"
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="3dp"
+                                android:layout_marginLeft="3dp"
+                                android:textSize="10sp">
+
+                            </TextView>
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>

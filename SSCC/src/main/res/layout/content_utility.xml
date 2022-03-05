@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_utility"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pl.ls4soft.sscc.Items.UtilityActivity"
+    tools:showIn="@layout/activity_utility">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+
+                        android:id="@+id/utilityNameTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginLeft="5dip"
+                        android:textSize="10sp"
+                        android:text="@string/utility_name"
+                        android:gravity="center_vertical">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:id="@+id/UtilityNameET"
+                        android:textSize="14sp"
+                        android:inputType="text"
+                        android:hint="@string/utility_name_p" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+
+                        android:text="@string/utility_scpower"
+                        android:id="@+id/SCPowerTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginLeft="5dip"
+                        android:textSize="10sp"
+                        android:gravity="center_vertical">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:id="@+id/SCPowerET"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp"
+                        android:hint="@string/utility_scpower_p" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+
+                        android:id="@+id/voltageTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginLeft="5dip"
+                        android:textSize="10sp"
+                        android:text="@string/utility_voltage"
+                        android:gravity="center_vertical">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:id="@+id/voltageET"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp"
+                        android:hint="@string/utility_voltage_p" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+
+                        android:id="@+id/xqTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginLeft="5dip"
+                        android:textSize="10sp"
+                        android:text="@string/utility_rea"
+                        android:gravity="center_vertical">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:id="@+id/xqET"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp"
+                        android:text="-"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@android:color/holo_red_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+
+                        android:text="RQ [\u03A9] = "
+                        android:id="@+id/rqTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginLeft="5dip"
+                        android:textSize="10sp"
+                        android:gravity="center_vertical">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp"
+                        android:text="-"
+                        android:id="@+id/rqET"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@android:color/holo_red_dark" />                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+
+                        android:id="@+id/zqTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginLeft="5dip"
+                        android:textSize="10sp"
+                        android:text="@string/utility_imp"
+                        android:gravity="center_vertical">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:id="@+id/zqET"
+                        android:hint="Enter voltage"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp"
+                        android:text="-"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@android:color/holo_red_dark" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+
+                        android:text='Ik3"[kA] ='
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:layout_marginLeft="5dip"
+                        android:textSize="10sp"
+                        android:id="@+id/UikBisTV"
+                        android:gravity="center_vertical">
+
+                    </TextView>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:textSize="14sp"
+                        android:text="-"
+                        android:id="@+id/UikBisET"
+                        android:clickable="false"
+                        android:cursorVisible="false"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:textColor="@android:color/holo_red_dark" />
+                </TableRow>
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:text="OK"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/OkBtn"
+                        android:background="@drawable/edstyle_green"
+                        android:layout_margin="1dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/CancelBtn"
+                        android:text="@string/cancel"
+                        android:background="@drawable/edstyle_blue"
+                        android:layout_margin="1dp" />
+
+                    <Button
+                        android:text="@string/delete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/UDeleteBtn"
+                        android:background="@drawable/edstyle_red"
+                        android:layout_margin="1dp" />
+                </TableRow>
+
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
